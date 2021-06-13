@@ -38,7 +38,7 @@ const App = ({ myCards }) => {
           )}
           <a
             className={classes.buttons}
-            href="https://l87r78.github.io/redux-persist/"
+            href="https://github.com/L87R78/redux-persist"
             rel="noreferrer"
             target="_blank"
           >
