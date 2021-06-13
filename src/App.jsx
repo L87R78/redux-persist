@@ -32,7 +32,7 @@ const App = ({ myCards }) => {
         <div className={classes.root}>
           <header className={classes.header}>
             {myCards.length > 0 && (
-              <Link className={classes.buttons} to="/redux-persist/my-favorites">
+              <Link className={classes.buttons} to="/my-favorites">
                 {ButtonTypes.myfavorites}
               </Link>
             )}
@@ -45,11 +45,11 @@ const App = ({ myCards }) => {
               {ButtonTypes.gitHub}
             </a>
           </header>
-          test
+          test 2
         </div>
         <Switch>
-          <Route exact path="/redux-persist" component={AllFavorites} />
-          <Route exact path="/redux-persist/my-favorites" component={MyFavorites} />
+          <Route exact path="/" component={AllFavorites} />
+          <Route exact path="/my-favorites" component={MyFavorites} />
         </Switch>
       </ThemeProvider>
     </Router>

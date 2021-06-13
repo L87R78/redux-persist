@@ -30,7 +30,7 @@ const MyFavorites = ({ myCards, actionRemoveCard }) => {
         ))}
       </div>
 
-      <Link className={classes.buttons} to="/redux-persist">
+      <Link className={classes.buttons} to="/">
         {ButtonTypes.back}
       </Link>
     </>
