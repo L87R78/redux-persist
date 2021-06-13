@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/redux-persist/static/js/main.6d536d6a.chunk.js",
-    "main.js.map": "/redux-persist/static/js/main.6d536d6a.chunk.js.map",
-    "runtime-main.js": "/redux-persist/static/js/runtime-main.c2925c64.js",
-    "runtime-main.js.map": "/redux-persist/static/js/runtime-main.c2925c64.js.map",
-    "static/js/2.9cb612b5.chunk.js": "/redux-persist/static/js/2.9cb612b5.chunk.js",
-    "static/js/2.9cb612b5.chunk.js.map": "/redux-persist/static/js/2.9cb612b5.chunk.js.map",
+    "main.js": "/redux-persist/static/js/main.7d1b066f.chunk.js",
+    "main.js.map": "/redux-persist/static/js/main.7d1b066f.chunk.js.map",
+    "runtime-main.js": "/redux-persist/static/js/runtime-main.78e7cd70.js",
+    "runtime-main.js.map": "/redux-persist/static/js/runtime-main.78e7cd70.js.map",
+    "static/js/2.1e761fe2.chunk.js": "/redux-persist/static/js/2.1e761fe2.chunk.js",
+    "static/js/2.1e761fe2.chunk.js.map": "/redux-persist/static/js/2.1e761fe2.chunk.js.map",
     "index.html": "/redux-persist/index.html",
-    "static/js/2.9cb612b5.chunk.js.LICENSE.txt": "/redux-persist/static/js/2.9cb612b5.chunk.js.LICENSE.txt"
+    "static/js/2.1e761fe2.chunk.js.LICENSE.txt": "/redux-persist/static/js/2.1e761fe2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c2925c64.js",
-    "static/js/2.9cb612b5.chunk.js",
-    "static/js/main.6d536d6a.chunk.js"
+    "static/js/runtime-main.78e7cd70.js",
+    "static/js/2.1e761fe2.chunk.js",
+    "static/js/main.7d1b066f.chunk.js"
   ]
 }
