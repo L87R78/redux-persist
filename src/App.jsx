@@ -43,6 +43,9 @@ const App = ({ myCards }) => {
                   {ButtonTypes.myfavorites}
                 </Link>
               )}
+              <Link className={classes.buttons} to="/">
+                  {ButtonTypes.myfavorites}
+                </Link>
               <a
                 className={classes.buttons}
                 href="https://l87r78.github.io/PC_Store/"
@@ -52,7 +55,7 @@ const App = ({ myCards }) => {
                 {ButtonTypes.gitHub}
               </a>
             </header>
-            test HasRouter new 2
+            test HasRouter new 2 33333
           </div>
           <Switch>
             <Route exact path="/" component={AllFavorites} />
