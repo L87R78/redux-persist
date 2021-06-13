@@ -20,6 +20,7 @@ const SnackBar = ({ snackBar, actionSnackBar }) => {
   return (
     <Snackbar
       anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      autoHideDuration={1500}
       open={snackBar.open}
       onClose={handleClose}
       message={snackBar.message}

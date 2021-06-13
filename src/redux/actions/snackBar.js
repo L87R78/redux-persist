@@ -3,7 +3,7 @@ import { SHOW_SNACKBAR } from "./actionTypes";
 function actionSnackBar(data) {
   const payload = {
     open: data.open,
-    message: data.card && `You have added card number ${data.card.id}`,
+    message: data.card && `You have added a card number ${data.card.id}`,
   };
   return {
     type: SHOW_SNACKBAR,
