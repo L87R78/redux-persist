@@ -31,7 +31,7 @@ const useStyles = makeStyles(() => ({
 const App = ({ myCards }) => {
   const classes = useStyles();
   return (
-    <HashRouter basename="/redux-persist">
+    <HashRouter basename="/">
       <Router>
         <ThemeProvider theme={theme}>
           <CssBaseline />
@@ -52,7 +52,7 @@ const App = ({ myCards }) => {
                 {ButtonTypes.gitHub}
               </a>
             </header>
-            test HasRouter new
+            test HasRouter new 2
           </div>
           <Switch>
             <Route exact path="/" component={AllFavorites} />
