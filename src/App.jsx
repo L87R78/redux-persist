@@ -56,7 +56,7 @@ const App = ({ myCards }) => {
           </div>
           <Switch>
             <Route exact path="/" component={AllFavorites} />
-            <Route exact path="/my-favorites" component={MyFavorites} />
+            <Route path="/my-favorites" component={MyFavorites} />
           </Switch>
         </ThemeProvider>
       </Router>
