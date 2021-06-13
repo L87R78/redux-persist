@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
   buttons: {
     ...theme.button,
-    margin: "auto",
+    margin: "16px auto",
     display: "block",
     textAlign: "center",
     width: "150px",

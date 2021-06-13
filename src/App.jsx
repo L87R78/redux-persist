@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 import { ThemeProvider, makeStyles, CssBaseline } from "@material-ui/core";
 import { connect } from "react-redux";
 import { ButtonTypes } from "./common/constans";
@@ -24,6 +24,7 @@ const useStyles = makeStyles(() => ({
 
 const App = ({ myCards }) => {
   const classes = useStyles();
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -37,14 +38,13 @@ const App = ({ myCards }) => {
           )}
           <a
             className={classes.buttons}
-            href="https://l87r78.github.io/PC_Store/"
+            href="https://l87r78.github.io/redux-persist/"
             rel="noreferrer"
             target="_blank"
           >
             {ButtonTypes.gitHub}
           </a>
         </header>
-        sdsadsaadd
       </div>
       <Switch>
         <Route exact path="/" component={AllFavorites} />

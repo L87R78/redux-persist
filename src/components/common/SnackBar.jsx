@@ -8,10 +8,6 @@ const useStyles = makeStyles((theme) => ({
     ...theme.snackbar,
     ...theme.snackbar.success,
   },
-  snackbarError: {
-    ...theme.snackbar,
-    ...theme.snackbar.error,
-  },
 }));
 
 const SnackBar = ({ snackBar, actionSnackBar }) => {
@@ -28,7 +24,7 @@ const SnackBar = ({ snackBar, actionSnackBar }) => {
       onClose={handleClose}
       message={snackBar.message}
       ContentProps={{
-        className: snackBar.error ? classes.snackbarError : classes.snackbar,
+        className: classes.snackbar,
       }}
     />
   );
