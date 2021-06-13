@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  HashRouter,
+} from "react-router-dom";
 import { ThemeProvider, makeStyles, CssBaseline } from "@material-ui/core";
 import { connect } from "react-redux";
 import { ButtonTypes } from "./common/constans";
@@ -25,34 +31,36 @@ const useStyles = makeStyles(() => ({
 const App = ({ myCards }) => {
   const classes = useStyles();
   return (
-    <Router>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <SnackBar />
-        <div className={classes.root}>
-          <header className={classes.header}>
-            {myCards.length > 0 && (
-              <Link className={classes.buttons} to="/my-favorites">
-                {ButtonTypes.myfavorites}
-              </Link>
-            )}
-            <a
-              className={classes.buttons}
-              href="https://l87r78.github.io/PC_Store/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              {ButtonTypes.gitHub}
-            </a>
-          </header>
-          test 2 3 4
-        </div>
-        <Switch>
-          <Route exact path="/" component={AllFavorites} />
-          <Route exact path="/my-favorites" component={MyFavorites} />
-        </Switch>
-      </ThemeProvider>
-    </Router>
+    <HashRouter basename="/">
+      <Router>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <SnackBar />
+          <div className={classes.root}>
+            <header className={classes.header}>
+              {myCards.length > 0 && (
+                <Link className={classes.buttons} to="/my-favorites">
+                  {ButtonTypes.myfavorites}
+                </Link>
+              )}
+              <a
+                className={classes.buttons}
+                href="https://l87r78.github.io/PC_Store/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                {ButtonTypes.gitHub}
+              </a>
+            </header>
+            test HasRouter
+          </div>
+          <Switch>
+            <Route exact path="/" component={AllFavorites} />
+            <Route exact path="/my-favorites" component={MyFavorites} />
+          </Switch>
+        </ThemeProvider>
+      </Router>
+    </HashRouter>
   );
 };
 
