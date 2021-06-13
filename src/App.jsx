@@ -45,7 +45,7 @@ const App = ({ myCards }) => {
               {ButtonTypes.gitHub}
             </a>
           </header>
-          dsdsdsdsd
+          test
         </div>
         <Switch>
           <Route exact path="/" component={AllFavorites} />
