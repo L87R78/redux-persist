@@ -1,5 +1,5 @@
 
-// Test with connect
+// TEST -> with connect
 // import React, { useState, useEffect } from "react";
 // import { connect } from "react-redux";
 // import Pagination from "@material-ui/lab/Pagination";
@@ -103,7 +103,7 @@
 
 
 
-// Test with useDispatch
+// TEST -> with useDispatch
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import Pagination from "@material-ui/lab/Pagination";
